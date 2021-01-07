@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterestsActivity"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <TextView android:text="@string/enjoy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textAlignment="center"
+        />
+
+    <TextView android:text="@string/myInterests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/mainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main"
+            android:layout_margin="20dp" />
+
+        <Button
+            android:id="@+id/githubButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/github"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
