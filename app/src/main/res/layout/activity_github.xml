@@ -9,10 +9,9 @@
     android:gravity="center" >
 
     <WebView
-        android:layout_width="match_parent"
-        android:layout_height="650dp"
         android:id="@+id/hub"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="635dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
