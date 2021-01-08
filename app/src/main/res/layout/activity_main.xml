@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="226dp"
         android:layout_height="226dp"
-        android:background="@drawable/img" />
+        android:background="@drawable/me" />
 
     <TextView android:text="@string/self"
         android:layout_width="match_parent"
