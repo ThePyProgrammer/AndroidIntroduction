@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SelfIntroduction">
-        <activity android:name=".MainActivity" android:label="My Profile">
+        <activity android:name=".MainActivity" android:label="@string/profileHead">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InterestsActivity" android:label="My Interests" />
-        <activity android:name=".GitHubActivity" android:label="My GitHub Profile" />
+        <activity android:name=".InterestsActivity" android:label="@string/interestsHead" />
+        <activity android:name=".GitHubActivity" android:label="@string/githubHead" />
     </application>
 
 </manifest>
