@@ -7,4 +7,7 @@
     <string name="contact">You can contact me at prannayagupta@gmail.com</string>
     <string name="enjoy">I enjoy all of the following:</string>
     <string name="myInterests">Machine Learning\nPhysics\nPython\nCalculus\nLinear Algebra\nQuantum Physics</string>
+    <string name="profileHead">My Profile</string>
+    <string name="interestsHead">My Interests</string>
+    <string name="githubHead">My GitHub Profile</string>
 </resources>
