@@ -6,15 +6,17 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
+import kotlinx.android.synthetic.main.activity_interests.*
+
 class InterestsActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_interests)
 
-        val main: Button = findViewById(R.id.mainButton)
-        val github: Button = findViewById(R.id.githubButton)
+        // val main: Button = findViewById(R.id.mainButton)
+        // val github: Button = findViewById(R.id.githubButton)
 
-        main.setOnClickListener {
+        mainButton.setOnClickListener {
             val toast = Toast.makeText(
                 applicationContext,
                 "Moving back to Profile",
@@ -26,7 +28,7 @@ class InterestsActivity  : AppCompatActivity() {
             startActivity(intent)
         }
 
-        github.setOnClickListener {
+        githubButton.setOnClickListener {
             val toast = Toast.makeText(
                 applicationContext,
                 "Moving to GitHub View",
