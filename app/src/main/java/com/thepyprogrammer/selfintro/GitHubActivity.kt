@@ -14,7 +14,6 @@ class GitHubActivity  : AppCompatActivity() {
         setContentView(R.layout.activity_github)
 
         val hub: WebView = findViewById(R.id.hub)
-        hub.getSettings().setJavaScriptEnabled(true)
         hub.setWebViewClient(object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
                 view.loadUrl(url)
