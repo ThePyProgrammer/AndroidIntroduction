@@ -24,8 +24,7 @@ class InterestsActivity  : AppCompatActivity() {
             )
             toast.show()
 
-            val intent = Intent(this@InterestsActivity, MainActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@InterestsActivity, MainActivity::class.java))
         }
 
         githubButton.setOnClickListener {
@@ -36,8 +35,7 @@ class InterestsActivity  : AppCompatActivity() {
             )
             toast.show()
 
-            val intent = Intent(this@InterestsActivity, GitHubActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@InterestsActivity, GitHubActivity::class.java))
         }
     }
 }
