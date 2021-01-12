@@ -24,10 +24,10 @@ class GitHubActivity  : AppCompatActivity() {
         })
         hub.loadUrl("https://github.com/ThePyProgrammer")
 
-        val main: Button = findViewById(R.id.mainButton)
-        val interests: Button = findViewById(R.id.interestsButton)
+        // val main: Button = findViewById(R.id.mainButton)
+        // val interests: Button = findViewById(R.id.interestsButton)
 
-        main.setOnClickListener {
+        mainButton.setOnClickListener {
             val toast = Toast.makeText(
                 applicationContext,
                 "Moving back to Profile",
@@ -39,7 +39,7 @@ class GitHubActivity  : AppCompatActivity() {
             startActivity(intent)
         }
 
-        interests.setOnClickListener {
+        interestsButton.setOnClickListener {
             val toast = Toast.makeText(
                 applicationContext,
                 "Moving to Interests",
