@@ -8,12 +8,14 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
+import kotlinx.android.synthetic.main.activity_github.*
+
 class GitHubActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_github)
 
-        val hub: WebView = findViewById(R.id.hub)
+        // val hub: WebView = findViewById(R.id.hub)
         hub.setWebViewClient(object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
                 view.loadUrl(url)
