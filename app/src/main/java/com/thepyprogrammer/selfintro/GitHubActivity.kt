@@ -3,6 +3,7 @@ package com.thepyprogrammer.selfintro
 import android.content.Intent
 import android.os.Bundle
 import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,12 @@ class GitHubActivity  : AppCompatActivity() {
 
         val hub: WebView = findViewById(R.id.hub)
         hub.getSettings().setJavaScriptEnabled(true)
+        hub.setWebViewClient(object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+                view.loadUrl(url)
+                return false
+            }
+        })
         hub.loadUrl("https://github.com/ThePyProgrammer")
 
         val main: Button = findViewById(R.id.mainButton)
